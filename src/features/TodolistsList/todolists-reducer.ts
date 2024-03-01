@@ -72,6 +72,7 @@ export const fetchTodolistsTC = () => {
 
     }
 }
+
 export const removeTodolistTC = (todolistId: string) => {
     return (dispatch: Dispatch<TodolistsActionsType | AppActionsType>) => {
         dispatch(setAppStatusAC("loading"))
@@ -89,6 +90,7 @@ export const removeTodolistTC = (todolistId: string) => {
 
     }
 }
+
 export const addTodolistTC = (title: string) => {
     return (dispatch: Dispatch<TodolistsActionsType | AppActionsType>) => {
         dispatch(setAppStatusAC("loading"))
@@ -105,6 +107,7 @@ export const addTodolistTC = (title: string) => {
 
     }
 }
+
 export const changeTodolistTitleTC = (id: string, title: string) => {
     return (dispatch: Dispatch<TodolistsActionsType | AppActionsType>) => {
         dispatch(setAppStatusAC("loading"))
@@ -121,20 +124,6 @@ export const changeTodolistTitleTC = (id: string, title: string) => {
 
     }
 }
-
-
-let source1: unknown
-
-let result1 = (source1 as string).length
-
-
-
-
-const showMessages = <D>(messages: Array<D>): { firstMessageText: D } => {
-    return {firstMessageText: messages[0]}
-}
-
-const res = showMessages<string>(["gago", "valo"])
 
 
 // types
